@@ -17,22 +17,34 @@
 
   //code here
 
-  var 
+  var Question = function(title, answerArray, rightAnswer){
+  	this.title = title;
+  	this.answerArray = answerArray;
+  	this.rightAnswer = rightAnswer;
+  }
 
 
 //Create a users Array which is going to hold all of our users.
 
   //code here
-
+var users = [];
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
   //code here
 
+  var Colin = new User("Colin", "colin@gmail.com", "password1234", 0);
+
+  var Liz = new User("Liz", "lizizdabest@hotmail.com", "stickers", 0);
+
+  var Spencer = new User("Spencer", "captainmoroni@lds.org", "family4ever", 0);
+
 
 //Create a questions Array which is going to hold all of our questions
 
   //code here
+
+  var questions = [];
 
 
 //Now, let's say we wanted to create a quiz about JavaScript. Create three instances of Question which contain the following data
@@ -40,16 +52,28 @@
 //title: 'T/F: JavaScript is just a scripting version of Java'
 //title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value"
 //Fill in the rest of the required data as you see appropriate.
-
+ title, answerArray, rightAnswer
   //code here
-
+var q1 = new Question("T/F: Inheritance is achieved in JavaScript through Prototypes?", ["T", "F"], "T");
+var q2 = new Question("T/F: JavaScript is just a scripting version of Java", ["T", "F"], "F");
+var q3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value", ["T", "F"], "T");
 
 //Now push all of your instances of Question into the questions Array
 
   //code here
 
+  question.push(q1);
+  question.push(q2);
+  question.push(q3);
+
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
 
   //code here
+function checkuserquestion(users, questions){
+	for(var i = 0; i < arr.length; i++){
+		console.log('My users Array and my questions arrray are ...');
+	}
+}
+
 
